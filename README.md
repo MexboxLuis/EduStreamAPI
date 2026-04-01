@@ -1,7 +1,7 @@
 # Welcome to EduStream API 🎓👋
 
 Hello! Welcome to the **EduStream API** repository. 
-This project is incredibly special to me because it marks **my very first API** . It is a full-stack web platform built for managing, storing, and streaming educational video content, specifically focused on mathematical and physical sciences (such as Algebra, Calculus, and Discrete Mathematics).
+This project is incredibly special to me because it marks **my very first API**. It is a full-stack web platform built for managing, storing, and streaming educational video content, specifically focused on mathematical and physical sciences (such as Algebra, Calculus, and Discrete Mathematics).
 
 Building this allowed me to understand client-server architecture, relational database integration, and dynamic view rendering.
 
@@ -71,7 +71,7 @@ Building this allowed me to understand client-server architecture, relational da
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/MexboxLuis/EduStreamAPI.git
-cd EduStream
+cd EduStreamAPI
 ```
 
 ### 2. Install dependencies
