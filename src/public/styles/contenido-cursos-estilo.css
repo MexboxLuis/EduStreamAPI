@@ -1,6 +1,7 @@
-body{
+body {
     overflow: hidden;
 }
+
 .videito {
     width: 90%;
     position: relative;
@@ -9,7 +10,8 @@ body{
     left: 5%;
     border-radius: 20px;
 }
-.ContenedorVideo{
+
+.ContenedorVideo {
     background-color: #80004a;
     width: 50%;
     height: 85%;
@@ -19,6 +21,7 @@ body{
     border-radius: 30px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.664);
 }
+
 .Canal {
     position: relative;
     top: 2%;
@@ -27,15 +30,16 @@ body{
     border-radius: 20px;
     display: inline;
 }
-.NombreCanal{
+
+.NombreCanal {
     position: relative;
-    top:-50px;
+    top: -50px;
     left: 150px;
     font-family: "PoppinsBold";
     color: #F9EAE1;
 }
-.ContenedorVideo .TituloVideo 
-{
+
+.ContenedorVideo .TituloVideo {
     position: relative;
     color: #F9EAE1;
     top: 13px;
@@ -43,6 +47,7 @@ body{
     font-size: 28px;
     font-family: "PoppinsBold";
 }
+
 .Temario {
     background-color: #FF5A5F;
     position: absolute;
@@ -70,7 +75,7 @@ body{
 }
 
 .MostrarTemario {
-    top: 15%;   
+    top: 15%;
     position: absolute;
     right: 2.5%;
     background-color: #FF5A5F;
@@ -201,28 +206,30 @@ body{
     z-index: 1;
     transition: 0.5s;
 }
+
 .Extras {
- position: relative;
- top:-135px;
- right: 80px;
- font-size: 18px;
- color: #F9EAE1;
- text-align: right;
+    position: relative;
+    top: -135px;
+    right: 80px;
+    font-size: 18px;
+    color: #F9EAE1;
+    text-align: right;
 }
 
-.Creditos{
+.Creditos {
     font-size: 15px;
     text-align: right;
     color: #F9EAE1;
     position: absolute;
     bottom: 0px;
     right: 0px;
-  }
-  .CreditosRojo{
+}
+
+.CreditosRojo {
     font-size: 15px;
     text-align: right;
-   color: #80004a;
+    color: #80004a;
     position: absolute;
     bottom: 0px;
     right: 0px;
-  }
+}

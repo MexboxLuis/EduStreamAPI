@@ -1,5 +1,5 @@
 const express = require('express');
-const {engine} = require('express-handlebars');
+const { engine } = require('express-handlebars');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const path = require('path');
@@ -11,12 +11,12 @@ const app = express();
 app.set('port', 3000);
 
 app.use(bodyParser.urlencoded({
-    extended: true
+  extended: true
 }));
 app.use(bodyParser.json());
 
-app.listen(app.get('port'), ()=>{
-    console.log(`Escuchando en el puerto ${app.get('port')}`);
+app.listen(app.get('port'), () => {
+  console.log(`Escuchando en el puerto ${app.get('port')}`);
 });
 
 hbs.registerHelper('ifCond', function (v1, operator, v2, options) {
@@ -38,20 +38,20 @@ hbs.registerHelper('ifCond', function (v1, operator, v2, options) {
   }
 });
 
-app.use(myconnection(mysql,{
-    host:'localhost',
-    user: 'root',
-    password: 'admin',
-    port: 3306,
-    database: 'crud_db'
+app.use(myconnection(mysql, {
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  port: 3306,
+  database: 'crud_db'
 }, 'single'));
 
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.set('views', __dirname+'/views');
+app.set('views', __dirname + '/views');
 app.engine('.hbs', engine({
-    extname: '.hbs',
+  extname: '.hbs',
 }));
 app.set('view engine', '.hbs');
 
@@ -79,6 +79,6 @@ const upload = multer({
 }).single("foto");
 
 
-app.get('/', (req, res)=>{
-    res.render('home');
+app.get('/', (req, res) => {
+  res.render('home');
 });

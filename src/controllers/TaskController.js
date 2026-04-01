@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadPath = path.join(__dirname, '../public/uploads/'); 
+    const uploadPath = path.join(__dirname, '../public/uploads/');
     cb(null, uploadPath);
   },
   filename: (req, file, cb) => {
@@ -89,10 +89,10 @@ const TaskController = {
       connection.query(query, [id], (err, results) => {
         if (err) {
           console.error('Error al obtener los datos de la base de datos:', err);
-          return; 
+          return;
         }
 
-        res.render('visualizar', {datos: results[0] });
+        res.render('visualizar', { datos: results[0] });
       });
     });
   },
@@ -124,7 +124,7 @@ const TaskController = {
     const updatedData = {
       titulo: nuevoTitulo,
       descripcion: nuevaDescripcion,
-      asignatura: nuevaAsignatura || asignaturaActual, 
+      asignatura: nuevaAsignatura || asignaturaActual,
     };
 
     req.getConnection((error, connection) => {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Asignatura: {{asignatura}}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -8,11 +9,12 @@
     <script src="/scripts/script.js"></script>
 
 </head>
+
 <body>
     <h1 class="asig">{{asignatura}}</h1>
     {{#each datos}}
     <div class="card">
-        
+
         <div class="card-body">
             <h2 class="card-title"><strong>Titulo: </strong>{{titulo}}</h2>
             <p><em>Descripcion:</em><br>{{descripcion}}</p>
@@ -25,7 +27,8 @@
                 </form>
             </div>
         </div>
-        <a href="/{{asignatura}}/visualizar/{{id}}"><video src="/uploads/{{foto}}"  class="card-img"  alt="este no es:{{foto}}" width="150px" height="150px"></video></a>
+        <a href="/{{asignatura}}/visualizar/{{id}}"><video src="/uploads/{{foto}}" class="card-img"
+                alt="este no es:{{foto}}" width="150px" height="150px"></video></a>
     </div>
     {{/each}}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
